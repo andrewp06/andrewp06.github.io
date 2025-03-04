@@ -1,3 +1,59 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: calc(16px + 1vw);
+    line-height: calc(1.1em + 0.5vw);
+
+
+}
+
+h2{
+    padding-top: 30%;
+    text-align: center;
+    font-family:"fantasy";
+    font-size: 200%;
+}
+p{
+    font-family: "fantasy";
+    text-indent: 50px;
+    text-align: left;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+
+.header {
+    font-size:110%;
+    font-family: "fantasy";
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #7e8f4c;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height:auto;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+.head-button{
+    font-size:auto;
+    background-color: #617526;
+    color: #d5e7d4;
+    padding:.5%;
+    border-radius:10%;
+}
+
+a:link, a:visited{
+    text-decoration: none
+}

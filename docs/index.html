@@ -4,9 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/global.css" type="text/css" />
-        <title>RIT Walking Map</title>
+        <title>Andrew Rohde</title>
     </head>
+    <header>
+        <div class="header">Andrew Rohde</div>
+        <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+    
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.scrollY;
+    
+                if (scrollTop < lastScrollTop) {
+                    // Scrolling down
+                    header.classList.add('hidden');
+                } else {
+                    // Scrolling up
+                    header.classList.remove('hidden');
+                }
+    
+                lastScrollTop = scrollTop;
+            });
+        </script>
+    </header>
     <body>
-        <h1>RIT Walking Map<br><a href="login.html">Login</a></h1>
+        <h2>Who am I?</h2>
+        <P>My name is Andrew Rohde. I am a a student at Rochester
+             Institue of Technology pursuing an education in 
+             software engineering</P>
+        <p> I have always had an interest in computers and their 
+            interworkings and I have descoverd that software engineering 
+            is the feild in which I can explore these areas and learn all the things i had wanted to.</p>
     </body>
 </html>
